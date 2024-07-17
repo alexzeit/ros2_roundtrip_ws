@@ -1,4 +1,0 @@
-source;share/roundtrip_ping_cmsg/local_setup.bash
-source;share/roundtrip_ping_cmsg/local_setup.dsv
-source;share/roundtrip_ping_cmsg/local_setup.sh
-source;share/roundtrip_ping_cmsg/local_setup.zsh

@@ -1,6 +1,0 @@
-{
-  "package_name": "roundtrip_msg",
-  "non_idl_tuples": [
-    "/home/bluebox/repos/ros2_roundtrip_ws/roundtrip_msg:msg/Roundtrip.msg"
-  ]
-}

@@ -1,4 +1,0 @@
-source;share/roundtrip_msg/local_setup.bash
-source;share/roundtrip_msg/local_setup.dsv
-source;share/roundtrip_msg/local_setup.sh
-source;share/roundtrip_msg/local_setup.zsh
