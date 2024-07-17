@@ -21,7 +21,7 @@ source install/setup.bash
 
 ros2 run roundtrip_ping_cmsg roundtripPing_node
 
-### 1st console (1st host)
+### 2nd console (or 2nd host)
 
 source install/setup.bash
 
