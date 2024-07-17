@@ -1,0 +1,69 @@
+[0.011s] Invoking command in '/home/tfa2si/repos/ros2_roundtrip_ws/build/roundtrip_msg': BB_ENV_PASSTHROUGH_ADDITIONS=ALL_PROXY BBPATH_EXTRA BB_LOGCONFIG BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake /home/tfa2si/repos/ros2_roundtrip_ws/roundtrip_msg -DCMAKE_INSTALL_PREFIX=/home/tfa2si/repos/ros2_roundtrip_ws/install/roundtrip_msg
+[0.020s] -- Found ament_cmake: 1.1.6 (/opt/ros/galactic/share/ament_cmake/cmake)
+[0.021s] [33mCMake Warning (dev) at /opt/ros/galactic/share/ament_cmake_core/cmake/core/python.cmake:22 (find_package):
+[0.021s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[0.021s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[0.021s]   the cmake_policy command to set the policy and suppress this warning.
+[0.021s] 
+[0.022s] Call Stack (most recent call first):
+[0.022s]   /opt/ros/galactic/share/ament_cmake_core/cmake/core/all.cmake:53 (include)
+[0.022s]   /opt/ros/galactic/share/ament_cmake_core/cmake/ament_cmake_core-extras.cmake:17 (include)
+[0.022s]   /opt/ros/galactic/share/ament_cmake_core/cmake/ament_cmake_coreConfig.cmake:41 (include)
+[0.022s]   /opt/ros/galactic/share/ament_cmake/cmake/ament_cmake_export_dependencies-extras.cmake:15 (find_package)
+[0.022s]   /opt/ros/galactic/share/ament_cmake/cmake/ament_cmakeConfig.cmake:41 (include)
+[0.022s]   CMakeLists.txt:9 (find_package)
+[0.022s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[0.022s] [0m
+[0.033s] -- Found PythonInterp: /usr/local/bin/python3 (found suitable version "3.12.4", minimum required is "3")
+[0.033s] -- Using PYTHON_EXECUTABLE: /usr/local/bin/python3
+[0.102s] -- Found rosidl_default_generators: 1.1.1 (/opt/ros/galactic/share/rosidl_default_generators/cmake)
+[0.103s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.107s] -- Found rosidl_adapter: 2.2.3 (/opt/ros/galactic/share/rosidl_adapter/cmake)
+[0.236s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.259s] [33mCMake Warning (dev) at /opt/ros/galactic/share/rosidl_adapter/cmake/rosidl_adapt_interfaces.cmake:40 (find_package):
+[0.259s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[0.259s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[0.259s]   the cmake_policy command to set the policy and suppress this warning.
+[0.259s] 
+[0.259s] Call Stack (most recent call first):
+[0.259s]   /opt/ros/galactic/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:130 (rosidl_adapt_interfaces)
+[0.259s]   CMakeLists.txt:13 (rosidl_generate_interfaces)
+[0.259s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[0.260s] [0m
+[0.271s] -- Found PythonInterp: /usr/local/bin/python3 (found version "3.12.4")
+[0.310s] [31mCMake Error at /opt/ros/galactic/share/rosidl_adapter/cmake/rosidl_adapt_interfaces.cmake:60 (message):
+[0.310s]   execute_process(/usr/local/bin/python3 -m rosidl_adapter --package-name
+[0.310s]   roundtrip_msg --arguments-file
+[0.310s]   /home/tfa2si/repos/ros2_roundtrip_ws/build/roundtrip_msg/rosidl_adapter__arguments__roundtrip_msg.json
+[0.310s]   --output-dir
+[0.310s]   /home/tfa2si/repos/ros2_roundtrip_ws/build/roundtrip_msg/rosidl_adapter/roundtrip_msg
+[0.310s]   --output-file
+[0.310s]   /home/tfa2si/repos/ros2_roundtrip_ws/build/roundtrip_msg/rosidl_adapter/roundtrip_msg.idls)
+[0.310s]   returned error code 1:
+[0.310s] 
+[0.310s]   Traceback (most recent call last):
+[0.310s] 
+[0.310s]     File "<frozen runpy>", line 198, in _run_module_as_main
+[0.310s]     File "<frozen runpy>", line 88, in _run_code
+[0.311s]     File "/opt/ros/galactic/lib/python3.8/site-packages/rosidl_adapter/__main__.py", line 19, in <module>
+[0.311s]       sys.exit(main())
+[0.311s]                ^^^^^^
+[0.311s]     File "/opt/ros/galactic/lib/python3.8/site-packages/rosidl_adapter/main.py", line 53, in main
+[0.311s]       abs_idl_file = convert_to_idl(
+[0.311s]                      ^^^^^^^^^^^^^^^
+[0.311s]     File "/opt/ros/galactic/lib/python3.8/site-packages/rosidl_adapter/__init__.py", line 18, in convert_to_idl
+[0.311s]       from rosidl_adapter.msg import convert_msg_to_idl
+[0.311s]     File "/opt/ros/galactic/lib/python3.8/site-packages/rosidl_adapter/msg/__init__.py", line 16, in <module>
+[0.311s]       from rosidl_adapter.resource import expand_template
+[0.311s]     File "/opt/ros/galactic/lib/python3.8/site-packages/rosidl_adapter/resource/__init__.py", line 19, in <module>
+[0.311s]       import em
+[0.311s] 
+[0.311s]   ModuleNotFoundError: No module named 'em'
+[0.311s] 
+[0.311s] Call Stack (most recent call first):
+[0.311s]   /opt/ros/galactic/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:130 (rosidl_adapt_interfaces)
+[0.311s]   CMakeLists.txt:13 (rosidl_generate_interfaces)
+[0.311s] 
+[0.311s] [0m
+[0.312s] -- Configuring incomplete, errors occurred!
+[0.316s] Invoked command in '/home/tfa2si/repos/ros2_roundtrip_ws/build/roundtrip_msg' returned '1': BB_ENV_PASSTHROUGH_ADDITIONS=ALL_PROXY BBPATH_EXTRA BB_LOGCONFIG BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake /home/tfa2si/repos/ros2_roundtrip_ws/roundtrip_msg -DCMAKE_INSTALL_PREFIX=/home/tfa2si/repos/ros2_roundtrip_ws/install/roundtrip_msg

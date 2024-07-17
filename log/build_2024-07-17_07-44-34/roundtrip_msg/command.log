@@ -1,0 +1,2 @@
+Invoking command in '/home/bluebox/repos/ros2_roundtrip_ws/build/roundtrip_msg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/bluebox/repos/ros2_roundtrip_ws/roundtrip_msg -DCMAKE_INSTALL_PREFIX=/home/bluebox/repos/ros2_roundtrip_ws/install/roundtrip_msg
+Invoked command in '/home/bluebox/repos/ros2_roundtrip_ws/build/roundtrip_msg' returned '1': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/bluebox/repos/ros2_roundtrip_ws/roundtrip_msg -DCMAKE_INSTALL_PREFIX=/home/bluebox/repos/ros2_roundtrip_ws/install/roundtrip_msg

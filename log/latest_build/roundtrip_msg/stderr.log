@@ -1,0 +1,58 @@
+[33mCMake Warning (dev) at /opt/ros/galactic/share/ament_cmake_core/cmake/core/python.cmake:22 (find_package):
+  Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+  are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+  the cmake_policy command to set the policy and suppress this warning.
+
+Call Stack (most recent call first):
+  /opt/ros/galactic/share/ament_cmake_core/cmake/core/all.cmake:53 (include)
+  /opt/ros/galactic/share/ament_cmake_core/cmake/ament_cmake_core-extras.cmake:17 (include)
+  /opt/ros/galactic/share/ament_cmake_core/cmake/ament_cmake_coreConfig.cmake:41 (include)
+  /opt/ros/galactic/share/ament_cmake/cmake/ament_cmake_export_dependencies-extras.cmake:15 (find_package)
+  /opt/ros/galactic/share/ament_cmake/cmake/ament_cmakeConfig.cmake:41 (include)
+  CMakeLists.txt:9 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+[0m
+[33mCMake Warning (dev) at /opt/ros/galactic/share/rosidl_adapter/cmake/rosidl_adapt_interfaces.cmake:40 (find_package):
+  Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+  are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+  the cmake_policy command to set the policy and suppress this warning.
+
+Call Stack (most recent call first):
+  /opt/ros/galactic/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:130 (rosidl_adapt_interfaces)
+  CMakeLists.txt:13 (rosidl_generate_interfaces)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+[0m
+[31mCMake Error at /opt/ros/galactic/share/rosidl_adapter/cmake/rosidl_adapt_interfaces.cmake:60 (message):
+  execute_process(/usr/local/bin/python3 -m rosidl_adapter --package-name
+  roundtrip_msg --arguments-file
+  /home/tfa2si/repos/ros2_roundtrip_ws/build/roundtrip_msg/rosidl_adapter__arguments__roundtrip_msg.json
+  --output-dir
+  /home/tfa2si/repos/ros2_roundtrip_ws/build/roundtrip_msg/rosidl_adapter/roundtrip_msg
+  --output-file
+  /home/tfa2si/repos/ros2_roundtrip_ws/build/roundtrip_msg/rosidl_adapter/roundtrip_msg.idls)
+  returned error code 1:
+
+  Traceback (most recent call last):
+
+    File "<frozen runpy>", line 198, in _run_module_as_main
+    File "<frozen runpy>", line 88, in _run_code
+    File "/opt/ros/galactic/lib/python3.8/site-packages/rosidl_adapter/__main__.py", line 19, in <module>
+      sys.exit(main())
+               ^^^^^^
+    File "/opt/ros/galactic/lib/python3.8/site-packages/rosidl_adapter/main.py", line 53, in main
+      abs_idl_file = convert_to_idl(
+                     ^^^^^^^^^^^^^^^
+    File "/opt/ros/galactic/lib/python3.8/site-packages/rosidl_adapter/__init__.py", line 18, in convert_to_idl
+      from rosidl_adapter.msg import convert_msg_to_idl
+    File "/opt/ros/galactic/lib/python3.8/site-packages/rosidl_adapter/msg/__init__.py", line 16, in <module>
+      from rosidl_adapter.resource import expand_template
+    File "/opt/ros/galactic/lib/python3.8/site-packages/rosidl_adapter/resource/__init__.py", line 19, in <module>
+      import em
+
+  ModuleNotFoundError: No module named 'em'
+
+Call Stack (most recent call first):
+  /opt/ros/galactic/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:130 (rosidl_adapt_interfaces)
+  CMakeLists.txt:13 (rosidl_generate_interfaces)
+
+[0m

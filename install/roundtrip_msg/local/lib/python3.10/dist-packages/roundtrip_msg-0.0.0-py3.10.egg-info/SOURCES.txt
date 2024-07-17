@@ -1,0 +1,8 @@
+setup.py
+roundtrip_msg/__init__.py
+roundtrip_msg.egg-info/PKG-INFO
+roundtrip_msg.egg-info/SOURCES.txt
+roundtrip_msg.egg-info/dependency_links.txt
+roundtrip_msg.egg-info/top_level.txt
+roundtrip_msg/msg/__init__.py
+roundtrip_msg/msg/_roundtrip.py
